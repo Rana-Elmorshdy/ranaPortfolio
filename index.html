@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Rana Adel</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="./video-loop.mp4" type="video/mp4" />
+      </video>
+
+      <header class="header">
+        <label for="menu" class="burger-menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a class="navigation__link navigation__bio" href="#bio">Bio</a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__skills" href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__media" href="#media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__projects" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__clients" href="#clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__contact" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input id="toggle" class="toggle__checkbox" type="checkbox" />
+          <label
+            class="toggle__label"
+            for="toggle"
+            role="button"
+            tabindex="0"
+          ></label>
+        </div>
+      </header>
+
+      <section id="bio" class="section bio">
+        <div class="bio__data">
+          <h1 class="bio__heading">
+            Hi There, I’M A Passionate Software Engineer
+          </h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Rana Adel</span>, a student at
+            <a
+              class="bio__almdrasa"
+              target="_blank"
+              href="https://www.almdrasa.com/"
+              >Almdrasa.com</a
+            >, Software Engineer and Interested in publishing content on
+            <a
+              class="bio__facebook"
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100067758550754&locale=ar_AR"
+              >Facebook</a
+            >,
+            <a
+              class="bio__twitter"
+              target="_blank"
+              href="https://x.com/rana_adel16"
+              >Twitter</a
+            >,
+            <a
+              class="bio__linkedin"
+              target="_blank"
+              href="https://www.linkedin.com/in/rana-adel-elmorshedy/"
+              >LinkedIn</a
+            >
+            and
+            <a
+              class="bio__youtube"
+              target="_blank"
+              href="https://github.com/Rana-Elmorshdy"
+              >Github</a
+            >.
+          </p>
+          <a class="bio__links say-hi-link" href="#contact">Say Hi</a>
+          <a
+            class="bio__links find-out-link"
+            target="_blank"
+            href="./assets/ranaCv.pdf"
+          >
+            Download CV <span class="bio__arrow">↓</span>
+          </a>
+        </div>
+        <div class="bio__pic-content">
+          <img
+            class="bio__pic"
+            src="./images/personal-pic.png"
+            alt="personal pic of Mohamed Abusrea"
+          />
+        </div>
+      </section>
+
+      <section id="skills" class="section skills section--with-bg">
+        <h2 class="h2-heading">Skills</h2>
+        <div class="skills__filters">
+          <button
+            class="skills__button skills__button--isActive"
+            data-type="all"
+          >
+            All
+          </button>
+          <button class="skills__button" data-type="frontend">Frontend</button>
+          <button class="skills__button" data-type="backend">Backend</button>
+        </div>
+        <!-- <ul class="skills__list">
+          <li data-name="HTML" class="skills__column">
+            <h2 class="skills__title">HTML</h2>
+            <span class="skills__years">8 years</span>
+          </li>
+          <li data-name="CSS" class="skills__column">
+            <h2 class="skills__title">CSS</h2>
+            <span class="skills__years">8 years</span>
+          </li>
+          <li data-name="Javascript" class="skills__column">
+            <h2 class="skills__title">Javascript</h2>
+            <span class="skills__years">8 years</span>
+          </li>
+          <li data-name="React" class="skills__column">
+            <h2 class="skills__title">React</h2>
+            <span class="skills__years">4 years</span>
+          </li>
+          <li data-name="Redux" class="skills__column">
+            <h2 class="skills__title">Redux</h2>
+            <span class="skills__years">3 years</span>
+          </li>
+          <li data-name="React testing library" class="skills__column">
+            <h2 class="skills__title">React testing library</h2>
+            <span class="skills__years">1 year</span>
+          </li>
+        </ul> -->
+      </section>
+
+      <section id="media" class="section media">
+        <video
+          class="media__video"
+          src="./video.mp4"
+          poster="./images/thumbnail.jpg"
+          controls
+        ></video>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2 class="h2-heading">
+          MY FEATURED <br />
+          PROJECTS
+        </h2>
+        <div class="projects__main">
+          <img
+            class="projects__img responsive-img"
+            src="./images/project-1.jpg"
+            alt="Quran Tab Extension"
+          />
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Tic Tac <br />
+              Toe
+            </h3>
+            <p class="projects__description">
+              This project is a responsive Tic Tac Toe game that works
+              seamlessly on smartphones, tablets, and desktops. It uses HTML for
+              layout, CSS and SASS for styling, and JavaScript for interactivity
+              and game logic.
+            </p>
+            <a
+              class="projects__link"
+              href="https://github.com/Rana-Elmorshdy/Tic-Tac-Toe.git"
+              target="_blank"
+              >Github Link</a
+            >
+          </div>
+
+          <div class="projects__data">
+            <h3 class="h3-heading">E-commerce</h3>
+            <p class="projects__description">
+              This project is a modern online store for bags, featuring a sleek,
+              user-friendly interface. It showcases a variety of stylish bags,
+              utilizing HTML for layout, CSS for design, and JavaScript for
+              interactivity and functionality, including product filters and
+              dynamic content updates.
+            </p>
+            <a
+              class="projects__link"
+              href="https://www.linkedin.com/posts/rana-adel-elmorshedy_html-css-javascript-activity-7082435180199591937-bAvW?utm_source=share&utm_medium=member_desktop"
+              target="_blank"
+              >Linkedin video
+            </a>
+          </div>
+          <img
+            class="projects__img responsive-img"
+            src="./images/project-2.jpg"
+            alt="Quran Tab Extension"
+          />
+        </div>
+      </section>
+
+      <section id="clients" class="section clients section--with-bg">
+        <h2 class="h2-heading">
+          What My <br />
+          Clients Says.
+        </h2>
+        <!-- <div class="clients__arrows">
+        <img class="clients__arrow" src="./images/left-arrow.png" width="80" alt="left arrow">
+        <img class="clients__arrow" src="./images/right-arrow.png" width="80" alt="right arrow">
+      </div> -->
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinion">
+              While Rana's work is commendable, there may be room for
+              improvement in certain areas. Providing her with targeted feedback
+              and guidance can help her further excel in her role.
+            </p>
+            <p class="clients__opinion">
+              Rana has a spirit that values honesty and clarity. She presents
+              her ideas clearly and offers constructive feedback to support
+              everyone's development.
+            </p>
+            <p class="clients__opinion">
+              Rana's current work showcases her skills and dedication. By
+              investing in her professional development and providing
+              challenging projects, she can continue to evolve and reach new
+              heights in her career.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+
+          <a href="mailto: example@gmail.com" class="contact__email"
+            >rana2saad22@gmail.com</a
+          >
+
+          <div class="contact__socials">
+            <a
+              class="contact__social"
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100067758550754&locale=ar_AR"
+            >
+              <img src="./images/brand/facebook.svg" alt="facebook" />
+            </a>
+            <a
+              class="contact__social"
+              target="_blank"
+              href="https://x.com/rana_adel16"
+            >
+              <img src="./images/brand/twitter.svg" alt="twitter" />
+            </a>
+            <a
+              class="contact__social"
+              target="_blank"
+              href="https://github.com/Rana-Elmorshdy"
+            >
+              <img src="./images/brand/github.svg" alt="github" />
+            </a>
+            <a
+              class="contact__social"
+              target="_blank"
+              href="https://www.instagram.com/rana_adel_63/?hl=ar"
+            >
+              <img src="./images/brand/instagram.svg" alt="instagram.svg" />
+            </a>
+            <a
+              class="contact__social"
+              target="_blank"
+              href="https://www.linkedin.com/in/rana-adel-elmorshedy/"
+            >
+              <img src="./images/brand/LinkedIn.svg" alt="LinkedIn.svg" />
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__formContent">
+          <h2 class="h2-heading">
+            Let’s Work <br />
+            Together!
+          </h2>
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input
+                type="text"
+                class="contact__input"
+                name="name"
+                placeholder="Full Name"
+                required
+              />
+              <!-- <input type="email" class="contact__input" placeholder="Email" required /> -->
+              <input
+                type="tel"
+                class="contact__input"
+                placeholder="Phone No."
+                name="tel"
+                required
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
+            </div>
+            <textarea
+              class="contact__input contact__textarea"
+              name="message"
+              placeholder="Your Message"
+              rows="1"
+              required
+            ></textarea>
+            <input type="submit" class="contact__button" value="Send Message" />
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">© 2024 by Rana Adel</footer>
+    </div>
+    <script src="./scripts/challenge-2.js"></script>
+  </body>
+</html>
